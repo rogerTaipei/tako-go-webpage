@@ -1,141 +1,327 @@
-<!-- Note: Template file not found, using internal one -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
+<!-- Mirrored from tako-go.square.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Apr 2025 14:16:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <title>Home | TAKO內測自嗨中~</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="generator" content="Square Online">
+    <link rel="shortcut icon" type="image/x-icon" href="square.ico">
+    <link rel="preload" href="https://cdn3.editmysite.com/app/website/css/site.58608dc81de07aeb4b89.css" as="style">
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+    <style>
+        .loading-view {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+        .loading-container {
+            width: 62px;
+            height: 54px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 12px;
+        }
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
+        @media (min-width: 840px) {
+            .loading-container {
+                width: 72px;
+                height: 54px;
+                grid-gap: 12px;
+            }
+        }
 
-#siteNavigation .current { background-color: #ccd; }
+        .dot-container {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#a4939320, #a49393);
+            /* Base64 encoded simple circle SVG /resources/assets/js/prime/src/site/components/ui/circle.svg */
+            mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDIgMiI+Cgk8Y2lyY2xlIHI9IjEiLz4KPC9zdmc+Cg==');
+            mask-repeat: no-repeat;
+            -webkit-mask-repeat: no-repeat;
+            mask-size: 100% auto;
+            -webkit-mask-size: 100% auto;
+            mask-position: bottom;
+            -webkit-mask-position: bottom;
+            animation: loading-view-movement;
+            animation-delay: 0s;
+            animation-duration: 3750ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.8, 0, 0.8, 1);
+        }
 
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+        .dot-container:nth-of-type(2) {
+            animation-delay: 130ms;
+        }
+
+        .dot-container:nth-of-type(3) {
+            animation-delay: 260ms;
+        }
+
+        @keyframes loading-view-movement {
+            /* up and down for 3s, stop for 750ms */
+            0%, 27%, 54% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+
+            14%, 41%, 68% {
+                mask-position: top;
+                -webkit-mask-position: top;
+            }
+
+            27%, 54%, 81%, 100% {
+                mask-position: bottom;
+                -webkit-mask-position: bottom;
+            }
+        }
+    </style>
+
+            <link rel="manifest" href="manifest.json">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="default">
+            <meta name='apple-mobile-web-app-title' content='TAKO內測自嗨中~'>
+            <meta name='theme-color' content='#a49393'>
+            <meta name='msapplication-TileColor' content='#a49393'>
+            <link rel='apple-touch-icon' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mj7b22.png?width=180'>
+            <meta name='msapplication-TileImage' content='/uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mj.png?width=144'>
+            <link rel='apple-touch-icon' sizes='120x120' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mj1539.png?width=120'>
+            <link rel='apple-touch-icon' sizes='152x152' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mj62d2.png?width=152'>
+            <link rel='apple-touch-icon' sizes='167x167' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mjdc0c.png?width=167'>
+            <link rel='apple-touch-icon' sizes='180x180' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/icon_180x180_ios_ODA2Mj7b22.png?width=180'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nzb25d.png?width=750&amp;height=1334&amp;fit=crop' media='(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz0f95.png?width=1242&amp;height=2208&amp;fit=crop' media='(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nzfb46.png?width=1125&amp;height=2436&amp;fit=crop' media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz4da5.png?width=828&amp;height=1792&amp;fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz1789.png?width=1242&amp;height=2688&amp;fit=crop' media='(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz4765.png?width=1170&amp;height=2532&amp;fit=crop' media='(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz9096.png?width=1284&amp;height=2778&amp;fit=crop' media='(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz485e.png?width=1536&amp;height=2048&amp;fit=crop' media='(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz1624.png?width=1620&amp;height=2160&amp;fit=crop' media='(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nzd24b.png?width=1668&amp;height=2224&amp;fit=crop' media='(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nza05b.png?width=1668&amp;height=2388&amp;fit=crop' media='(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)'>
+            <link rel='apple-touch-startup-image' href='uploads/b/3aee5de0-1595-11f0-a1cc-fb3a5fced636/splash_2048x4435_MzE2Nz3f0c.png?width=2048&amp;height=2732&amp;fit=crop' media='(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)'>
+    
+                        
+            
+    
+        <script defer src="https://cdn3.editmysite.com/app/checkout/assets/checkout/js/system.js" data-cookieconsent="ignore"></script>
+    
+    
+        <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/imports.en.ca4535deec7d15ff.js" data-cookieconsent="ignore"></script>
+    
+    
+            <script type="systemjs-importmap" src="https://cdn3.editmysite.com/app/checkout/assets/checkout/locale-imports-map.6079ef9a05761c6e.json" data-cookieconsent="ignore"></script>
+    
+    
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/runtime.0a25fc6a7696d2bc7334.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/vue-modules.4a41b3ba298bf4563d97.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/languages/en.59aaea2813655c0b4524.js" data-cookieconsent="ignore"></script>
+    <script defer type="text/javascript" src="https://cdn3.editmysite.com/app/website/js/site.f27ead7f2424f3035e14.js" data-cookieconsent="ignore"></script>
+
+    
+    <meta property="og:type" content="website" />
+    
+    <script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    </script>
+
+            
+    
+    <!--square-online-feature-flags-->
+<script type="application/javascript" data-cookieconsent="ignore" data-role="square-online-featureflags">
+    window.__DYNAMIC_BOOTSTRAP__ ??= {};
+
+    Object.assign(window.__DYNAMIC_BOOTSTRAP__, {
+        featureFlags: {"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2023-11-13","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":true,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":true,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":true,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":true,"ecom.website.ai-text.long-form":true,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.chamber.spi.serve-items":true,"ecom.can_use_cart_sharing":true,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom-compare-item-availabilities":true,"ecom-use-item-availabilities":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":false,"websdk-use-new-afterpay-buttons":true,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-decouple-open-tabs":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false},
+    });
+</script>
+<!--end-square-online-feature-flags-->
+
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.__BOOTSTRAP_STATE__ = {"siteData":{"site":{"id":"3aee5de0-1595-11f0-a1cc-fb3a5fced636","properties":{"classicSiteID":"259124014790591836","catalogSiteId":"259124014790591836","selectedVertical":"other","verticalV4":"home-goods-shop","language":"en","squareMerchantId":"ML98GFNN5AFES","siteCatalogVersion":"fc8b8895-bc56-4c9e-ac06-0676dcc4549f","appSiteCartNativePayControlGroup":false,"appSiteCartNativePayTestGroup":false,"isKioskSite":false,"squareSyncUserId":"e5ebf051-e8f1-444d-ba54-d0b41ce72f39","isServiceCutoverEnabled":true,"hidden":true,"blockFtux":{"blog-header":["ftux-alert"]},"onboarded":{"guidance":{"version":"1","complete":false,"welcomeComplete":false,"instagramMiniSiteTipDismissed":true,"guidanceMobileTrafficDismissedCount":3},"isSiteDesignOnboarded":true,"isVideoBannerAnnouncementDismissed":true,"isCustomizationDiscoverabilityDismissed":true},"publishedAt":1745115736,"websiteNotices":{"siteSettingsTrial":true},"siteIconSettings":{"updatedAt":1745115738,"splash_images":{"config":{"size":"2048","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"TAKO\u5167\u6e2c\u81ea\u55e8\u4e2d~","customColor":"#a49393","primaryColor":"#a49393","contrastColor":"#ffffff"},"2048x4435":"\/uploads\/b\/3aee5de0-1595-11f0-a1cc-fb3a5fced636\/splash_2048x4435_MzE2Nz.jpg"},"ios_icon_images":{"config":{"size":"180","radius":0,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"TAKO\u5167\u6e2c\u81ea\u55e8\u4e2d~","customColor":"#a49393","primaryColor":"#a49393","contrastColor":"#ffffff"},"180x180":"\/uploads\/b\/3aee5de0-1595-11f0-a1cc-fb3a5fced636\/icon_180x180_ios_ODA2Mj.png"},"android_icon_images":{"config":{"size":"512","radius":256,"fontPath":"\/var\/www\/public\/static\/fonts\/Square Market\/sqmarket-medium.woff","iconType":"free","imageUrl":null,"language":"en","siteTitle":"TAKO\u5167\u6e2c\u81ea\u55e8\u4e2d~","customColor":"#a49393","primaryColor":"#a49393","contrastColor":"#ffffff"},"512x512":"\/uploads\/b\/3aee5de0-1595-11f0-a1cc-fb3a5fced636\/icon_512x512_android_NTg3MD.png"}},"selectedDeviceView":"desktop","order_fulfillment_guides":"shipping","domain":{"custom_domain":"","subdomain":"tako-go.square.site","site_id":259124014790591836}}},"pagesMeta":[{"id":"4748ac00-1d8e-11f0-957e-39085a3eeeda","name":"About","route":"about","title":"About","featureType":null,"description":"","hidden":false},{"id":"4748e890-1d8e-11f0-87d9-9f141c2cb9a7","name":"Contact Us","route":"contact-us","title":"Contact Us","featureType":null,"description":"","hidden":false},{"id":"47491a70-1d8e-11f0-8daf-27ef5c5618d1","name":"Home","route":"home","title":"Home","featureType":null,"description":"","hidden":false},{"id":"47481680-1d8e-11f0-97e2-1b8e0ede7d89","name":"\u96b1\u79c1\u689d\u6b3e","route":"privacypolicy","title":"\u96b1\u79c1\u689d\u6b3e","featureType":null,"description":"","hidden":false},{"id":"47485e10-1d8e-11f0-9524-13f204e9f7d8","name":"\u4f7f\u7528\u689d\u6b3e","route":"termsofservice","title":"\u670d\u52d9\u8207\u96b1\u79c1\u689d\u6b3e","featureType":null,"description":"","hidden":false}],"customPagesMeta":[],"artifactsMeta":[],"snapshot":{"id":"474782e0-1d8e-11f0-9943-e700dd95977b","site_id":"3aee5de0-1595-11f0-a1cc-fb3a5fced636","properties":{"seo":{"page":{"47481680-1d8e-11f0-97e2-1b8e0ede7d89":{"title":"\u96b1\u79c1\u689d\u6b3e","description":""},"47485e10-1d8e-11f0-9524-13f204e9f7d8":{"title":"\u670d\u52d9\u8207\u96b1\u79c1\u689d\u6b3e","description":""},"47491a70-1d8e-11f0-8daf-27ef5c5618d1":{"title":"Home","description":""}}},"logo":"","color":{"primaryColor":"#a49393","colorProfiles":[{"id":"primary-muted-bold","background":"--color-secondary-comFIJ"}],"secondaryColors":[{"id":"--color-secondary-QKETms","value":"#ffffff"},{"id":"--color-secondary-comFIJ","value":"#faebeb"}],"siteColorProfile":"primary-muted-bold"},"icons":{"preset":"square"},"title":"TAKO\u5167\u6e2c\u81ea\u55e8\u4e2d~","social":[],"fontset":{"name":"sqmarket","version":"0.1.0"},"fontPair":{"id":"square-market"},"homePage":"47491a70-1d8e-11f0-8daf-27ef5c5618d1","homepage":{"type":"page","typeID":"47491a70-1d8e-11f0-8daf-27ef5c5618d1"},"routeMap":{"":"47491a70-1d8e-11f0-8daf-27ef5c5618d1","home":"47491a70-1d8e-11f0-8daf-27ef5c5618d1","about":"4748ac00-1d8e-11f0-957e-39085a3eeeda","contact-us":"4748e890-1d8e-11f0-87d9-9f141c2cb9a7","privacypolicy":"47481680-1d8e-11f0-97e2-1b8e0ede7d89","termsofservice":"47485e10-1d8e-11f0-9524-13f204e9f7d8"},"styleset":{"name":"square","version":"0.1.0"},"framework":{"name":"birdseye","version":"0.1.0"},"onboarded":false,"openGraph":{"page":{"47481680-1d8e-11f0-97e2-1b8e0ede7d89":{"title":"\u96b1\u79c1\u689d\u6b3e","description":""},"47485e10-1d8e-11f0-9524-13f204e9f7d8":{"title":"\u670d\u52d9\u8207\u96b1\u79c1\u689d\u6b3e","description":""}}},"blocksMeta":{"1ba02a70-1d86-11f0-a7b9-6fd82ae1497f":"VCSDzB","1ba4e560-1d86-11f0-a7b9-6fd82ae1497f":"DzRvWF","29d53171-1d8c-11f0-a7b9-6fd82ae1497f":"qncZwD","3f125fb1-1d85-11f0-a7b9-6fd82ae1497f":"MZfanq","51f6a5a1-1d85-11f0-a7b9-6fd82ae1497f":"SFbNzl","b6608401-159e-11f0-842a-69cfd8270cc2":"MQFjcY","c3f39581-1d82-11f0-af24-95a5eb5f9806":"TphgrA","c42ea2b1-1d82-11f0-af24-95a5eb5f9806":"enQcOW","cb8cd460-1596-11f0-a472-ad707c64f1b6":"hxvkCM","cb8f2da0-1596-11f0-a3b8-5b6a746712f8":"hvbVkN","cb8f3920-1596-11f0-97ce-191010055c56":"pryfCA","cb8f44d0-1596-11f0-8fb7-e11fd40a1bdb":"LslFpG","cb8f4d20-1596-11f0-92f0-2d9741ba7366":"eaFgEk","cb8f5850-1596-11f0-9ada-b742858b4a79":"IgXyDU","cf4aea41-1d83-11f0-a7b9-6fd82ae1497f":"IHhLrC","cf7bbe41-1d83-11f0-a7b9-6fd82ae1497f":"AtfDYZ"},"headerLogo":"","navigation":[{"link":{"page":{"pageID":"47491a70-1d8e-11f0-8daf-27ef5c5618d1"}},"type":"page","title":"Home"},{"link":{"page":{"pageID":"4748ac00-1d8e-11f0-957e-39085a3eeeda"}},"type":"page"},{"link":{"page":{"pageID":"47485e10-1d8e-11f0-9524-13f204e9f7d8"}},"type":"page"},{"link":{"page":{"pageID":"47481680-1d8e-11f0-97e2-1b8e0ede7d89"}},"type":"page"},{"link":{"page":{"pageID":"4748e890-1d8e-11f0-87d9-9f141c2cb9a7"}},"type":"page"},{"link":{"story":"aa28e280-1d89-11f0-8956-716a82c2e0de"},"type":"story","title":"Story title"}],"buttonstyle":"squared","customFonts":[],"featuresets":[],"contentAreas":{"cart":{"id":"cb8f4bb0-1596-11f0-8685-8b540262a65e","hidden":false,"content":{"id":"cb8f4d20-1596-11f0-92f0-2d9741ba7366","type":"block","layout":"cart-1","purpose":"cart@^1.1.0","elements":[{"id":"cb8f4fa0-1596-11f0-a45a-55eb706969b0","purpose":"title","properties":{}},{"id":"cb8f5120-1596-11f0-b687-b5cb3b733534","purpose":"button","properties":{}},{"id":"cb8f5290-1596-11f0-b144-a3c9b2e3617e","purpose":"text","properties":{}},{"id":"cb8f5400-1596-11f0-9cc1-3781d5c39fc4","purpose":"image","properties":{}},{"id":"cb8f5560-1596-11f0-9fbe-51352c55229b","purpose":"close","properties":{}}],"properties":{"shortID":"eaFgEk"}}},"footer":{"id":"cb8f2b10-1596-11f0-9d5a-572d94bb9f66","hidden":false,"content":{"id":"cb8f2da0-1596-11f0-a3b8-5b6a746712f8","type":"block","layout":"footer-7","purpose":"footer@^1.1.0","elements":[{"id":"cb8f3080-1596-11f0-b73d-f979b56323f5","purpose":"logo","properties":{"hidden":false,"fontSize":"medium"}},{"id":"cb8f3200-1596-11f0-ac1d-b7cbc97ef5b5","purpose":"text","properties":{"id":"cb8f3200-1596-11f0-ac1d-b7cbc97ef5b5","color":"var(--color-white)","button":{},"hidden":false,"allCaps":true,"content":{"quill":{"ops":[{"insert":"\u00a9 2025\n"}]}}}},{"id":"cb8f3380-1596-11f0-b7c5-9dd5a623f43c","purpose":"social","properties":{"hidden":true}},{"id":"cb8f34e0-1596-11f0-aa9c-ad36bf1851b8","purpose":"newsletter","properties":{"type":"subscription","fields":[{"id":"d1702230-1596-11f0-88bd-af7dc0383556","type":"action-input","label":"","required":true,"properties":{},"instructions":""}],"hidden":true,"schema":{"id":"d1702231-1596-11f0-88bd-af7dc0383556","hash":"483cb34fb64cc929b9aa330674abbd4a"}}}],"properties":{"shortID":"hvbVkN","textAlign":"","background":{"type":"default"},"navigation":{"hidden":false,"shouldCopyHeader":false},"colorProfile":"primary-bold","paymentMethods":{"hidden":false},"newsletterTitle":{"allCaps":false,"content":{"quill":{"ops":[{"insert":"Contact us: Support@tako-go.com\n"}]}},"fontSize":"step-minus-1","textStyle":"body"}}},"properties":{"styles":{"minHeight":"100px"}}},"header":{"id":"cb8f37b0-1596-11f0-9ef0-9dc0e50dd138","hidden":false,"content":{"id":"cb8f3920-1596-11f0-97ce-191010055c56","type":"block","layout":"header-5","purpose":"header@^1.1.0","elements":[{"id":"cb8f3b90-1596-11f0-962f-273254124bc3","purpose":"logo","properties":{"name":"main logo.png","type":"logo-image-override","scale":24,"original":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","cropOptions":null,"logoDimensions":{"width":512,"height":534}}},{"id":"cb8f3d00-1596-11f0-a0a7-737123a0a695","purpose":"social","properties":{}},{"id":"cb8f3e80-1596-11f0-b8ea-afd3ccd87f74","purpose":"navigation","properties":{"hidden":false}},{"id":"cb8f4050-1596-11f0-bda9-ff272eec7eeb","purpose":"hamburger","properties":{}},{"id":"cb8f41e0-1596-11f0-bff1-7b78be2271e2","purpose":"cart","properties":{}}],"properties":{"shortID":"pryfCA","textAlign":"","background":{"type":"default","gradient":{"type":"linear","angle":180,"colors":[{"color":"--color-white","position":0},{"color":"--primary-color","position":100}]},"transparentOverBanner":false},"actionButton":{"hidden":true,"presetStyle":"primary"},"colorProfile":"primary-muted-bold","headerScroll":"sticky","disableSearch":true}},"properties":{"styles":{"minHeight":"80px"}}},"navMobile":{"id":"cb8f4360-1596-11f0-8874-755ae078c4ca","hidden":false,"content":{"id":"cb8f44d0-1596-11f0-8fb7-e11fd40a1bdb","type":"block","layout":"navigation-mobile","purpose":"nav-mobile@^1.1.0","elements":[{"id":"cb8f4750-1596-11f0-9b8d-3bd87dc7b59f","purpose":"navigation","properties":{}},{"id":"cb8f48c0-1596-11f0-b491-ff916e4df3e2","purpose":"close","properties":{}},{"id":"cb8f4a40-1596-11f0-9ba2-2b86c9a4038e","purpose":"social","properties":{}}],"properties":{"shortID":"LslFpG"}}},"freeFooter":{"id":"cb8f56e0-1596-11f0-899e-b55bded5aef4","hidden":false,"content":{"id":"cb8f5850-1596-11f0-9ada-b742858b4a79","type":"block","layout":"free-footer-1","purpose":"free-footer@^1.0.0","elements":[],"properties":{"bgColor":"light","shortID":"IgXyDU","background":{}}}}},"homePageType":"page","pageTemplates":{"story":"47498a20-1d8e-11f0-8b66-992242cfb1cb","product":"4749be60-1d8e-11f0-8b0e-b7d171f86d12","shopAll":"474a1860-1d8e-11f0-83cb-15bffa029864","category":"474a1860-1d8e-11f0-83cb-15bffa029864","leaveReview":"4749ea60-1d8e-11f0-9b21-8faf09365da3","orderOnline":"474a3f20-1d8e-11f0-af39-81c1f7769f53","instagramFeed":"474a6660-1d8e-11f0-991c-b1748c72394d","searchResults":"474a1860-1d8e-11f0-83cb-15bffa029864"},"protectedPages":{"page":{"47481680-1d8e-11f0-97e2-1b8e0ede7d89":"public"}}},"version":8},"user":{"id":152727536,"properties":{"isSquareSyncUser":true,"country":"US"}},"billingFeatures":{"billingFeatures":{"embed_restricted_widgets":false,"com_gifting":false,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":false,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":false,"advanced_site_stats":false,"password_protection":false,"video_backgrounds":false,"hd_video_and_audio":false,"membership_registration":false,"membership_settings":false,"online_store":true,"accept_paypal_payments":false,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":true,"priority_support":false,"advanced_ecommerce_stats":false,"seo":true,"unlimited_storage":false,"members":0,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":false,"site_search":false,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":false,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_FREE","square_processing_rate_display":{"USD":[{"percent":"2.9","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":true,"site_code_customization":false,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":true,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":false,"custom_fonts":false,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":false,"product_scheduled_actions":false,"custom_site_icon":true,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":false,"personalized_recommendations":false,"easy_reordering":false,"self_serve_ordering":false,"ecom_preorders":false,"order_text_alerts":false,"time_based_categories":false,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"combos":false,"com_square_transaction_best_discount":false},"isTrial":false},"siteFeatures":{"embed_restricted_widgets":false,"com_gifting":false,"com_authorizenet_payment":false,"com_digital_products":true,"com_coupons":true,"com_product_reviews":false,"com_product_limit":-1,"popup_announcement":true,"popup_coupons":false,"popup_lead_capture":true,"community_support":true,"free_ssl_security":true,"custom_domain_connection":false,"advanced_site_stats":false,"password_protection":false,"video_backgrounds":false,"hd_video_and_audio":false,"membership_registration":false,"membership_settings":false,"online_store":true,"accept_paypal_payments":false,"product_badges":true,"product_modifiers":true,"in_store_pickup":true,"shipping_calculator":true,"chat_and_email_support":true,"phone_support":true,"priority_support":false,"advanced_ecommerce_stats":false,"seo":true,"unlimited_storage":false,"members":0,"abandoned_cart_emails":false,"integrated_shipping_labels":true,"tax_calculator":true,"no_weebly_ads":false,"site_search":false,"product_search":true,"square_gift_cards":true,"inventory_management":true,"integrated_facebook_ads":false,"real_time_shipping_calculator":false,"age_confirmation":true,"square_processing_rate_id":"ECOM_SOS_FREE","square_processing_rate_display":{"USD":[{"percent":"2.9","flat":30,"type":"all"}],"AUD":[{"percent":"2.2","flat":0,"type":"all"}],"CAD":[{"percent":"2.8","flat":30,"type":"all"}],"EUR":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.9","flat":25,"type":"non-eu"}],"GBP":[{"percent":"1.4","flat":25,"type":"intra-eu"},{"percent":"2.5","flat":25,"type":"non-eu"}],"JPY":[{"percent":"3.6","flat":0,"type":"non-jcb"},{"percent":"3.6","flat":0,"type":"jcb"}]},"favicon_customization":true,"site_code_customization":false,"instagram_feed_tagging":true,"quick_shop":true,"scheduleEnabled":false,"smartGroupsEnabled":false,"socialAdsEnabled":true,"lifetimeEmails":2,"emailsPerMonth":2,"recipientsPerEmail":500,"recipientsPerMonth":1000,"automations":0,"automatedRecipientsPerMonth":0,"enabledLeadFormTypes":["popup"],"allowsPurchasingCredits":false,"insights_overview":false,"insights_sales":false,"insights_products":false,"custom_fonts":false,"com_shipping_settings":true,"com_manage_gift_cards":true,"com_create_shipping_label_discount":true,"customer_accounts":true,"com_stripe_payment":false,"com_product_sync":true,"com_product_variant_limit":-1,"com_shipping_labels_tier":"weebly_cpp_tier","com_transaction_fee":"0.00","form_file_upload":false,"product_scheduled_actions":false,"custom_site_icon":true,"video_uploading":0,"buyer_customer_accounts":false,"personalized_order_screen":false,"personalized_recommendations":false,"easy_reordering":false,"self_serve_ordering":false,"ecom_preorders":false,"order_text_alerts":false,"time_based_categories":false,"advanced_order_limits":false,"modifier_images":false,"free_fulfillment_meter":false,"spd_fees_amount":0,"twenty_four_seven_support":false,"advanced_design_controls":false,"order_item_quantity_limit":false,"stock_media":false,"so_buyer_subscriptions":false,"item_badge_customization":false,"shop_all_item_layouts":false,"icon_sets":false,"banner_slides":false,"priority_phone_support":false,"pdp_layouts":false,"full_height_banners":false,"scrolling_text":false,"featured_item_layouts":false,"mega_menu":false,"appts_customization":false,"premium_text_image_layout":false,"featured_category_layouts":false,"ai_generated_content":false,"image_shapes":false,"group_ordering":false,"inventory_bundles":false,"combos":false,"com_square_transaction_best_discount":false},"featureset":{"pages":[]},"page":{"id":"47491a70-1d8e-11f0-8daf-27ef5c5618d1","site_snapshot_id":"474782e0-1d8e-11f0-9943-e700dd95977b","properties":{"name":"Home","route":"home","title":"Home","description":"","contentAreas":{"banner":{"id":"cb8cd2c0-1596-11f0-a40f-cb8d579b551c","hidden":true,"content":{"id":"cb8cd460-1596-11f0-a472-ad707c64f1b6","type":"block","layout":"banner-text-below","purpose":"banner@^1.2.2","elements":[{"id":"cb8cd5f0-1596-11f0-9278-a35fc56c25e0","purpose":"title-1","properties":{"title":{"quill":{"ops":[{"insert":"\n","attributes":{"block":true}}]}},"fontSize":"step-4","textStyle":"headline"}},{"id":"cb8cd760-1596-11f0-98a8-d121828018d1","purpose":"image-1","properties":{}},{"id":"cb8cd8e0-1596-11f0-b79b-d1de0722187c","purpose":"button-1","properties":{"hidden":true}}],"deprecated":["2021-04"],"properties":{"text":{"hidden":true},"label":{"hidden":false,"allCaps":true,"content":{"quill":{"ops":[{"insert":"\u8eab\u5728\u7570\u9109\u7684\u60c6\u60b5, \u6211\u5011\u61c2!\n\n"}]}},"fontSize":"step-0","textStyle":"title"},"height":"extra-small","shortID":"hxvkCM","textAlign":"","background":{"type":"default"},"bannerImage":{"id":"banner-image","type":"inline","image":{"id":"979018d0-159c-11f0-842a-69cfd8270cc2","name":"main logo.png","size":{},"shape":{},"width":512,"height":534,"source":"","altText":"","original":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","sourceSet":{},"attribution":{},"cropOptions":null},"hidden":true,"imageMobile":{"id":"979018d0-159c-11f0-842a-69cfd8270cc2","name":"main logo.png","width":512,"height":534,"source":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","altText":"","original":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","sourceSet":{},"attribution":{},"cropOptions":null}},"colorProfile":"custom-profile","secondaryButton":{"hidden":true}}}},"userContent":{"id":"cb8cccf0-1596-11f0-8e30-3565952c70aa","hidden":false,"content":{"id":"cb8ccf60-1596-11f0-b899-8de18fe3e40a","type":"container","cells":[{"id":"b6608400-159e-11f0-842a-69cfd8270cc2","type":"cell","content":{"id":"b6608401-159e-11f0-842a-69cfd8270cc2","type":"block","layout":"text-and-image-overlapping-card","purpose":"text-and-image@^1.0.0","properties":{"height":"extra-small","shortID":"MQFjcY","settings":{"texts":{"hidden":true},"titles":{}},"textAlign":"","repeatables":[{"id":1,"text":{"content":"One of our most popular items. Perfect for everyday use. Exceptional quality and choice."},"image":{"figure":{"name":"main logo.png","width":512,"height":534,"source":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","altText":"","original":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/main%20logo_1744239143.png","sourceSet":{},"attribution":{},"cropOptions":null},"hidden":false},"title":{"tag":"h2","content":{"quill":{"ops":[{"insert":"\u8b93TAKO\u6539\u8b8a\u6211\u5011\u7684\u7a98\u5883! "},{"insert":"\n","attributes":{"block":true}}]}},"fontSize":"medium","textStyle":"title"},"button":{"label":"View products","hidden":true},"callout":{"tag":"h3","hidden":true,"content":{"quill":{"ops":[{"insert":"\u8eab\u5728\u7570\u9109\u7684\u60c6\u60b5, \u6211\u5011\u61c2~"},{"insert":"\n","attributes":{"block":true}}]}},"fontSize":"medium","textStyle":"title"},"secondaryButton":{"label":"Learn more","hidden":true}}]}}},{"id":"29d53170-1d8c-11f0-a7b9-6fd82ae1497f","type":"cell","content":{"id":"29d53171-1d8c-11f0-a7b9-6fd82ae1497f","type":"block","layout":"text-and-image-2-row-mirror","purpose":"text-and-image@^1.0.0","properties":{"shortID":"qncZwD","settings":{"texts":{"fontSize":"step-1","textStyle":"body"},"images":{"shape":null,"aspectRatio":"original"},"titles":{"tag":"h2","bold":false,"hidden":false,"italic":false,"fontSize":"step-minus-1","textStyle":"body"}},"textAlign":"","background":{"type":"default"},"repeatables":[{"id":1,"text":{"content":{"quill":{"ops":[{"insert":"\u4f60\u6211\u540c\u5728\u4ed6\u9109,\n\u8a9e\u8a00\u7684\u9694\u95a1, \u751f\u6d3b\u7684\u4e0d\u4fbf\uff0c\n\u8b93\u6211\u5011\u72fc\u72fd\u7684\u6709\u5982\u5c71\u9802\u6d1e\u4eba!\n\u9019\u611f\u53d7\u795e\u4f3c\u5916\u7c4d\u65b0\u5a18, \u5f77\u5f7f\u7a7f\u8d8a\u81f3\u7570\u4e16\u754c\u3002\n\u53ea\u6709\u5207\u8eab\u9ad4\u6703\u7684\u6211\u5011\u624d\u80fd\u61c2\u5f97\u3002\n\nTAKO\u6210\u7acb\u7684\u521d\u8877,\n\u662f\u8981\u62ab\u834a\u65ac\u68d8\u7684\u6539\u8b8a\u6211\u5011\u7684\u751f\u5b58\u6a21\u5f0f\uff0c\n\u958b\u5275\u4e00\u500b\u7528\u6bcd\u8a9e\u4e5f\u80fd\u6d3b\u5f97\u50cf\u500b\u73fe\u4ee3\u4eba\u7684\u5e73\u81fa!\n"}]}}},"image":{"figure":{"name":"TAKO5\u4eba\u7d44.jpeg","width":1024,"height":1536,"source":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/TAKO5%E4%BA%BA%E7%B5%84_1744405931.jpeg","altText":"","original":"\/uploads\/b\/8ea3620e51d13709f0a3cb8a57fbadf2069245f33cc5ffd797331be00c93ce27\/TAKO5%E4%BA%BA%E7%B5%84_1744405931.jpeg","sourceSet":{},"attribution":{},"cropOptions":null},"hidden":false},"title":{"tag":"h2","content":{"quill":{"ops":[{"insert":"TAKO\u7684\u7531\u4f86:\n"}]}},"fontSize":"medium","textStyle":"title"},"button":{"label":"View products","hidden":true},"callout":{"tag":"h3","hidden":true,"content":"Quality Craftsmanship","fontSize":"medium","textStyle":"title"},"secondaryButton":{"label":"Learn more","hidden":true}}],"colorProfile":"custom-profile"}}}]}}}}}},"storeInfo":{"merchant_id":"ML98GFNN5AFES","buyer_customer_accounts_enabled":false,"currency":"USD","locale":"en_US","language":"en","return_policy":null,"shipping_policy":null,"max_donation_amount":5000,"store_mode":"cart","payment_method_support":{"visa":true,"mastercard":true,"amex":true,"discover":true,"jcb":true,"interac":false,"paypal":false,"apple_pay":true,"google_pay":true,"cash_app":true,"square_pay":true},"show_pdp_buy_now_button":true,"allowed_to_sell":true,"accepting_orders":true,"has_payment_processor":true,"is_group_ordering_enabled":false,"product_reviews_enabled":false,"show_on_sale_section":true,"show_low_stock_section":true,"show_out_of_stock_section":true,"shipping_location_ids":["11f01594d971da40bfc53cecef6d5b2a"],"fulfillment_support":{"delivery":false,"pickup":false,"shipping":false,"dine_in":false,"manual":false,"digital":false},"seller_preferred_fulfillment":"delivery","locations_counts":{"pickup":0,"delivery":0,"dine_in":0,"pickup_or_delivery":0,"brick_and_mortar_fulfillment":0,"shipping":1,"total":1},"has_subscribable_items":false,"has_shippable_product":false,"has_time_based_categories":false,"product_setting_low_stock_threshold":5,"category_hierarchy_root_ids":{"site_category_id":null,"id":null}},"commerceLinks":{"products":{},"categories":{},"meta":{"pagination":{"products":[],"categories":{"per_page":2500,"current_page":1,"total_pages":1}}}},"autoNavLinks":[{"link":{"page":{"pageID":"47491a70-1d8e-11f0-8daf-27ef5c5618d1"}},"type":"page","title":"Home"},{"link":{"page":{"pageID":"4748ac00-1d8e-11f0-957e-39085a3eeeda"}},"type":"page"},{"link":{"page":{"pageID":"47485e10-1d8e-11f0-9524-13f204e9f7d8"}},"type":"page"},{"link":{"page":{"pageID":"47481680-1d8e-11f0-97e2-1b8e0ede7d89"}},"type":"page"},{"link":{"page":{"pageID":"4748e890-1d8e-11f0-87d9-9f141c2cb9a7"}},"type":"page"},{"link":{"story":"aa28e280-1d89-11f0-8956-716a82c2e0de"},"type":"story","title":"Story title"}],"blogPostLinks":{},"featureFlags":{"ecom.website.deprecated-layouts":false,"marketing-enable-drive-repeat-purchase-campaign":true,"ecom.website.facebook-food":true,"ecom.website.theme-export":false,"ecom.website.chamber-via-fastly":true,"ecom.square-online-published-catalog-cache-version":"2023-11-13","ecom.checkout.open_tabs":true,"ecom.website.photo-reviews":true,"ecom.checkout.cmi-sentry-integration":true,"ecom.checkout.cmi.bootstrap-tracking-snowplow":true,"ecom.checkout.cmi.bootstrap-tracking-ga":true,"ecom.website.order-confirmation-page.website-redirect":true,"ecom.checkout.cmi.locale-view-splitting":true,"ecom.checkout.open_tabs_gc_coupon":true,"ecom.cmi-cart":true,"ecom.checkout.cmi.theme-fonts":false,"ecom-fulfillment-api-v-2":false,"ecom.omnichannel-discounts-frontend":true,"ecom.omnichannel-discounts-category-api":false,"ecom-improved-tipping-experience":true,"ecom.splash.loyalty":true,"ecom.website.published-site.datadog-rum":true,"ecom.website.editor.datadog-rum":true,"ecom-website-published-site-datadog-rum-bot-filter":true,"ecom.image-controls.width-fix":true,"ecom.gradient-backgrounds":true,"ecom.website.form-fraud-blocking":true,"ecom.website.form-fraud-auto-ban":true,"ecom.website.code-editor":false,"ecom.shopping.pdp-layouts-m1":true,"ecom.chamber.subscriptions":true,"ecom.tuba.subscriptions-paid-shipping-rates":true,"ecom-cko-enhanced-logging":true,"ecom-cko-unified-logging":true,"ecom.shopping.so-coupons-sunset-integrations":true,"ecom.order-online-text-layouts":true,"ecom.appointment-improvements":true,"ecom.appointment-improvements-m2":true,"ecom.tuba.committed-inventory-m1":true,"ecom.splash-improvements":true,"ecom-themes-onboarding":true,"ecom.shopping.featured-categories-paid-layouts":true,"ecom.website.ai-text.short-form":true,"ecom.website.ai-text.long-form":true,"ecom.website.metered-request.override":false,"ecom.website.async-create-theme":false,"ecom.chamber.spi.serve-items":true,"ecom.can_use_cart_sharing":true,"ecom.website.ai.editor-prototype":false,"ecom.website.ai.page-seo":false,"ecom.appointment-direct-booking":true,"ecom-service-cutover-fe-request-augmentations":true,"ecom.catalog.so-item-library-deprecation-3":true,"ecom.kiosk-photo-card":true,"ecom-compare-item-availabilities":true,"ecom-use-item-availabilities":true,"ecom.website.system-page.cart":false,"ecom-enable-kiosk-large-catalog-layout":false,"ecom-hide-instagram":false,"ecom-enable-kiosk-item-preloading":true,"ecom-brand-api-sync":true,"ecom.service-cutover.enable-tuba-traffic":true,"ecom-show-order-online":false,"websdk-use-new-afterpay-buttons":true,"ecom-checkout-should-check-is-decouple-checkout":true,"ecom-prime-use-store-info-v29":true,"ecom-checkout-decouple-open-tabs":true,"ecom-checkout-force-pci-compliance":false,"ecom-website-hide-food-beverage-themes":false},"lightning":{},"datadog":{"publishedSite":{"service":"spi-ecom-square-online-buyer-journey","applicationId":"0a9b10e6-9671-4e1d-bd0b-2f283f0d29ee","clientToken":"pubc6e7a7143c494f34f1366112ef7c1e2c","env":"production","rum":{"sampleRate":100,"sessionReplaySampleRate":100,"traceSampleRate":10}}}};
+    </script>
+
+        
+    <script type="application/javascript" data-cookieconsent="ignore">
+        window.stopSiteLoadingAnimation = () => {
+            const loadingElement = document.querySelector('.loading-view');
+            loadingElement?.remove();
+        };
+    </script>
+
+    
+    <script type="application/javascript" data-cookieconsent="ignore">
+    /**
+     * PCI Compliance Flag
+     *
+     * This flag indicates if scripts have been filtered for PCI compliance (OpenTabs SSO Checkout route).
+     * This value is set only for buyer dashboard/site view to prevent infinite loading loops.
+     *
+     * Do NOT include this file in editor-frame.blade.php as it affects seller dashboard.
+     */
+    window.IS_PCI_SCRIPTS_FILTERED = false;
+</script>
+    <script type="application/javascript" data-cookieconsent="ignore">
+    // used for editor-frame and pub site bootstrap
+    window.APP_ENV = 'production';
+    window.APP_ORIGIN = 'https://square.online/';
+    window.APP_URL = 'https://www.weebly.com/';
+    window.ASSET_BASE = '/app/website';
+    window.ASSETS_PUBLIC_PATH = 'https://cdn3.editmysite.com/app/website/';
+    window.CMS_API_PATH ='/app/website/cms';
+    window.DEPRECATED_IMAGE_HOST = 'https://images.editor.website/';
+    window.FRAME_ORIGIN = 'https://sandbox.square.online/';
+    window.GENERATE_GOOGLE_MAP_BASE = 'https://www.editmysite.com/';
+    window.IMAGE_HOST = 'https://8ea3620e51d13709f0a3.cdn6.editmysite.com/';
+    window.IS_DRAFT = false;
+    window.IS_MAGIC_MIRROR = false;
+    window.IS_THEME_PREVIEW = false;
+    window.IS_ENHANCED_PREVIEW = false;
+    window.DRAFT_ORIGIN = 'https://drafts.editmysite.com/';
+    window.PUBLISHED_CMS_API_PREFIX = '/app/cms';
+    window.SENTRY_DSN = 'https://13e49d785d8d4f828038b6136f3b48ba@sentry.io/1263158';
+    window.RELEASE = 'prime-9706e93';
+    window.URL_BASE = '';
+    window.XSRF_COOKIE_NAME = 'publishedsite-xsrf';
+    window.FASTLY_URL_BASE = 'https://cdn5.editmysite.com/';
+    window.SQUARE_WEB_PAYMENTS_SDK = 'https://web.squarecdn.com/v1/square.js'
+    window.PUBLIC_SQUARE_URL_BASE = 'squareup.com';
+    window.PUBLIC_SQUARE_APPTS_URL_BASE = 'app.squareup.com';
+    window.ENABLE_FRONTEND_LOCAL_DEV_CACHE = '';
+    window.GOOGLE_TAG_DEVELOPER_ID = 'developer_id.dOTM2Yj';
+    window.IS_SQUARE_GO = false;
+
+            window.IS_PUBLISHED_MAGIC_MIRROR = false;
+    
+    // state
+    window.SUBDOMAIN_BASE = 'square.site';
+
+</script>
+
+    <!--square-online-snowplow-->
+
+<script data-cookieconsent="statistics">
+    (function (p, l, o, w, i, n, g) {
+    var id = i + '-script';
+    if (!l.getElementById(i)) {
+        n = l.createElement(o);
+        g = l.getElementsByTagName(o)[0];
+        n.id = id;
+        n.async = 1;
+        n.src = w;
+        g.parentNode.insertBefore(n, g);
+    }
+})(window, document, "script", "https://cdn2.editmysite.com/js/wsnbn/snowday262.js", "snowday");
+</script>
 
 
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
+<script data-cookieconsent="ignore" data-role="square-online-snowplow">
 
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
- background-image: url(backblue.gif);
- background-repeat: no-repeat;
- background-position: top right;
-	}
+(function (p, l, o, w, i, n, g) {
+    if (!p[i]) {
+        p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+        p.GlobalSnowplowNamespace.push(i);
+        p[i] = function () {
+            (p[i].q = p[i].q || []).push(arguments);
+        };
+        p[i].q = p[i].q || [];
+    }
+})(window, document, '', '', "snowday");
 
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109];
+var snPlObR = function(arr) {
+    var s = '';
+    for (var i = 0 ; i < arr.length ; i++){
+        s = s + String.fromCharCode(arr[i]);
+    }
+    return s;
+};
+var s = snPlObR(r);
+
+var regEx = new RegExp(s);
+
+window._W = {
+    Analytics: {
+        trackers: {
+            wSP: snowday,
+        },
+        user_id: '152727536',
+        site_id: '259124014790591836',
+    },
+};
+
+(function(app_id, ec_hostname, discover_root_domain) {
+    var track = window._W.Analytics.trackers.wSP;
+    if (!track) return;
+    track('newTracker', app_id, ec_hostname, {
+        appId: app_id,
+        post: true,
+        platform: 'web',
+        discoverRootDomain: discover_root_domain,
+        cookieDomain: document.location.hostname,
+        cookieName: '_snow_',
+        contexts: {
+            webPage: true,
+            performanceTiming: true,
+            gaCookies: true
+        },
+        crossDomainLinker: function (linkElement) {
+            return regEx.test(linkElement.href);
+        },
+        respectDoNotTrack: document.cookie.indexOf('gdpr-kb') === -1
+    });
+    track('trackPageView', _W.Analytics.user_id+':'+_W.Analytics.site_id);
+    track('crossDomainLinker', function (linkElement) {
+        return regEx.test(linkElement.href);
+    });
+})(
+    '_wn',
+    'ec.editmysite.com',
+    false
+);
+</script>
+<!--end-square-online-snowplow-->
 
 
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
+            
+        
+    
+    <link rel="stylesheet" href="https://cdn3.editmysite.com/app/website/css/site.58608dc81de07aeb4b89.css">
 </head>
+<body>
+    <div class="loading-view">
+        <div
+            class="loading-container"
+        >
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+            <div
+                class="dot-container"
+            ></div>
+        </div>
+    </div>
+    <div id="app"></div>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+                
+        <link rel="stylesheet" type="text/css" href="https://cdn3.editmysite.com/app/checkout/assets/checkout/css/wcko.7b41fe76c4864c12e9e7.css" />
+    </body>
 
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-  <TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-<!-- Note: Template file not found, using internal one -->
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="tako-go.square.site/index.html">
-						Home | TAKO內測自嗨中~
-					</A>		
-			</TD>
-		</TR>
-<!-- Note: Template file not found, using internal one -->
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2014]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
-
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2014 Xavier Roche & other contributors - Web Design: Kauler Leto.</small></td>
-	</tr>
-</table>
-
-</body>
-
+<!-- Mirrored from tako-go.square.site/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Apr 2025 14:16:56 GMT -->
 </html>
-
-
